@@ -13,4 +13,5 @@ dependencies = [
     "langgraph-checkpoint-sqlite>=3.0.3",
     "python-dotenv>=1.2.2",
     "tavily-python>=0.7.23",
+    "yfinance>=1.2.0",
 ]
