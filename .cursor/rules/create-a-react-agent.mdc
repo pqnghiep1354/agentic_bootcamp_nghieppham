@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+Whenever creating a react agent using langchain lib, always use create_agent instead of create_react_agent, which is deprecated.
+Import: from langchain.agents import create_agent
