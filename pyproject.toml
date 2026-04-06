@@ -5,14 +5,24 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "chromadb>=1.5.5",
+    "flashrank>=0.2.10",
     "google-genai>=1.68.0",
     "langchain>=1.2.13",
+    "langchain-chroma>=1.1.0",
+    "langchain-classic>=1.0.3",
+    "langchain-community>=0.4.1",
+    "langchain-experimental>=0.4.1",
     "langchain-google-genai>=2.0.0",
+    "langchain-neo4j>=0.9.0",
     "langchain-openai>=1.1.12",
+    "langchain-text-splitters>=1.1.1",
     "langfuse>=4.0.1",
     "langgraph>=1.1.3",
     "langgraph-checkpoint-sqlite>=3.0.3",
+    "neo4j>=6.1.0",
     "python-dotenv>=1.2.2",
+    "rank-bm25>=0.2.2",
     "tavily-python>=0.7.23",
     "yfinance>=1.2.0",
 ]
