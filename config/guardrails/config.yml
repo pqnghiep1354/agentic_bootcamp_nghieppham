@@ -1,0 +1,34 @@
+# NeMo Guardrails config — TechStore Vietnam
+# File này được load bởi RailsConfig.from_path() trong agents.py
+# Mọi policy definition đều ở đây và prompts.yml
+
+models:
+  - type: main
+    engine: openai
+    model: gpt-4.1-nano
+    parameters:
+      temperature: 0
+
+# Execution Rail policy — load bằng config.execution_rules trong agents.py
+# Đây KHÔNG phải NeMo built-in — là custom policy format chúng ta tự định nghĩa
+execution_rules:
+  admin_only_tools:
+    - xem_ghi_chu_noi_bo
+  blocked_keywords:
+    - "all"
+    - "*"
+    - "tất cả"
+
+# PII patterns cho Output Rail regex
+pii_patterns:
+  EMAIL: '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}\b'
+  PHONE_VN: '\b0\d{9,10}\b'
+  CCCD: '\b\d{12}\b'
+
+rails:
+  input:
+    flows:
+      - self check input
+  output:
+    flows:
+      - self check output
