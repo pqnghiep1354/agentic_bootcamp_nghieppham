@@ -13,3 +13,11 @@ build/
 .vscode/
 generate_notebooks.py
 
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+*.egg-info/
+generate_notebooks.py
+nb_common.py
+
