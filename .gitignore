@@ -2,3 +2,14 @@
 chroma_db/
 Neo4j-63b2845f-Created-2026-04-10.txt
 Neo4j-credentials-NEO4J_API_KEY-Created-2026-04-10.txt
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.venv/
+.pytest_cache/
+.vscode/
+generate_notebooks.py
+
