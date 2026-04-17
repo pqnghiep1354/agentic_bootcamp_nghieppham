@@ -3,5 +3,5 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 *.egg-info/
-generated_notebooks.py
+generate_notebooks.py
 nb_common.py
